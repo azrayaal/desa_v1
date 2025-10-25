@@ -9,7 +9,7 @@ export default function Talent() {
       title: "Pelatihan Digital Marketing untuk UMKM Desa",
       date: "25 Oktober 2025",
       location: "Balai Desa Sukamaju",
-      image: "/images/desa/event-digital.jpg",
+      image: "/images/desa/event-wisata.jpg",
       description:
         "Belajar strategi pemasaran online untuk mengembangkan usaha kecil menengah dengan bimbingan mentor profesional.",
     },
@@ -18,7 +18,7 @@ export default function Talent() {
       title: "Workshop Kerajinan Anyaman Bambu",
       date: "30 Oktober 2025",
       location: "Desa Mekarsari",
-      image: "/images/desa/event-bamboo.jpg",
+      image: "/images/desa/event-wisata.jpg",
       description:
         "Pelatihan pembuatan produk anyaman bambu bernilai jual tinggi, langsung bersama pengrajin lokal berpengalaman.",
     },
@@ -27,7 +27,7 @@ export default function Talent() {
       title: "Lomba Inovasi Teknologi Tepat Guna",
       date: "5 November 2025",
       location: "Kecamatan Harapan Jaya",
-      image: "/images/desa/event-tech.jpg",
+      image: "/images/desa/event-wisata.jpg",
       description:
         "Ayo tampilkan ide teknologi sederhana yang bisa membantu kehidupan masyarakat desa jadi lebih efisien dan modern.",
     },
@@ -37,8 +37,8 @@ export default function Talent() {
     <div className="min-h-screen bg-gradient-to-b from-gray-900 to-gray-800 py-20 px-6">
       {/* Header */}
       <div className="text-center mb-10">
-        <h1 className="text-4xl font-bold text-white mb-2">
-          🎓 Talent & Event Desa
+        <h1 className="text-4xl font-bold  mb-2">
+          <div className="text-white">🎓 Talent & Event Desa</div>
         </h1>
         <p className="text-gray-600 max-w-2xl mx-auto">
           Temukan berbagai pelatihan, lomba, dan kegiatan pemberdayaan yang

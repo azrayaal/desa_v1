@@ -36,6 +36,9 @@ import { ReactComponent as UserIcon } from "./user-line.svg?react";
 import { ReactComponent as CalenderIcon } from "./calender-line.svg?react";
 import { ReactComponent as EyeIcon } from "./eye.svg?react";
 import { ReactComponent as EyeCloseIcon } from "./eye-close.svg?react";
+import { ReactComponent as WorldIcon } from "./world.svg?react";
+import { ReactComponent as ArtIcon } from "./art.svg?react";
+
 import { ReactComponent as TimeIcon } from "./time.svg?react";
 import { ReactComponent as CopyIcon } from "./copy.svg?react";
 import { ReactComponent as ChevronLeftIcon } from "./chevron-left.svg?react";
@@ -112,4 +115,6 @@ export {
   ChatIcon,
   AngleLeftIcon,
   AngleRightIcon,
+  WorldIcon,
+  ArtIcon,
 };

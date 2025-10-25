@@ -25,6 +25,16 @@ import ProductDetail from "./pages/desa/ProductDetail";
 import Talent from "./pages/desa/talent";
 import TalentDetail from "./pages/desa/talent_detail";
 import Desa from "./pages/desa/desa";
+import Sentiment from "./pages/desa/setiment";
+import SentimentDetail from "./pages/desa/sentimentDetail";
+import SpreadDashboard from "./pages/desa/spread";
+import SpreadDetail from "./pages/desa/spreadDetail";
+import IconPreview from "./pages/icons";
+import MarketPlaceForm from "./pages/desa/marketplaceForm";
+import TalentForm from "./pages/desa/talentForm";
+// import TalentTable from "./pages/desa/talentData";
+import DesaProfiling from "./pages/desa/desaProfiling";
+import AppLayout2 from "./layout/AppLayout2";
 
 export default function App() {
   return (
@@ -59,14 +69,38 @@ export default function App() {
             <Route path="/line-chart" element={<LineChart />} />
             <Route path="/bar-chart" element={<BarChart />} />
 
-            <Route path="/" element={<DesaHome />} />
+            {/* <Route path="/" element={<DesaHome />} /> */}
+           
             <Route path="/products" element={<Products />} />
-            <Route path="/desa" element={<Desa />} />
-            <Route path="/talent" element={<Talent />} />
-            <Route path="/talent/:id" element={<TalentDetail />} />
+
+            {/* <Route path="/desa" element={<Desa />} /> */}
+            {/* <Route path="/talent" element={<Talent />} /> */}
+            <Route path="/talent/add" element={<TalentForm />} />
+            {/* <Route path="/talent" element={<TalentTable />} /> */}
+            {/* <Route path="/talent/:id" element={<TalentDetail />} /> */}
             <Route path="/art" element={<DesaHome />} />
+            {/* <Route path="/marketplace" element={<MarketPlace />} />
+            <Route path="/marketplace/:id" element={<ProductDetail />} /> */}
+            <Route path="/marketplace-form" element={<MarketPlaceForm />} />
+            {/* <Route path="/sentiment" element={<Sentiment />} />
+            <Route path="/sentiment/:id" element={<SentimentDetail />} /> */}
+            {/* <Route path="/spread" element={<SpreadDashboard />} />
+            <Route path="/spread/:id" element={<SpreadDetail />} /> */}
+            <Route path="/icons" element={<IconPreview />} />
+          </Route>
+
+          {/* <Route element={<AppLayout2 />}> */}
+          <Route >
+            <Route path="/desa-dashboard" element={<DesaProfiling />} />
+            <Route path="/" element={<Desa />} />
             <Route path="/marketplace" element={<MarketPlace />} />
             <Route path="/marketplace/:id" element={<ProductDetail />} />
+            <Route path="/sentiment" element={<Sentiment />} />
+            <Route path="/sentiment/:id" element={<SentimentDetail />} />
+            <Route path="/spread" element={<SpreadDashboard />} />
+            <Route path="/spread/:id" element={<SpreadDetail />} />
+            <Route path="/talent" element={<Talent />} />
+            <Route path="/talent/:id" element={<TalentDetail />} />
           </Route>
 
           {/* Auth Layout */}

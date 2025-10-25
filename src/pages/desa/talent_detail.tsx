@@ -10,7 +10,7 @@ export default function TalentDetail() {
       title: "Pelatihan Digital Marketing untuk UMKM Desa",
       date: "25 Oktober 2025",
       location: "Balai Desa Sukamaju",
-      image: "/images/desa/event-digital.jpg",
+      image: "/images/desa/event-wisata.jpg",
       description: `
         Pelatihan ini bertujuan untuk membantu pelaku UMKM di desa agar mampu
         memasarkan produk mereka secara digital melalui media sosial, marketplace,
@@ -28,7 +28,7 @@ export default function TalentDetail() {
       title: "Workshop Kerajinan Anyaman Bambu",
       date: "30 Oktober 2025",
       location: "Desa Mekarsari",
-      image: "/images/desa/event-bamboo.jpg",
+      image: "/images/desa/event-wisata.jpg",
       description: `
         Workshop ini mengajarkan cara membuat berbagai produk anyaman bambu
         yang bernilai seni dan ekonomis. Cocok bagi masyarakat yang ingin mengembangkan
@@ -45,7 +45,7 @@ export default function TalentDetail() {
       title: "Lomba Inovasi Teknologi Tepat Guna",
       date: "5 November 2025",
       location: "Kecamatan Harapan Jaya",
-      image: "/images/desa/event-tech.jpg",
+      image: "/images/desa/event-wisata.jpg",
       description: `
         Lomba ini mengundang seluruh masyarakat untuk berinovasi menciptakan
         teknologi sederhana yang dapat membantu kegiatan sehari-hari di lingkungan desa.
@@ -87,7 +87,9 @@ export default function TalentDetail() {
         }}
       >
         <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white">
-          <h1 className="text-4xl font-bold mb-2">{event.title}</h1>
+          <h1 className="text-4xl font-bold mb-2">
+            <div className="text-white">{event.title}</div>
+          </h1>
           <p className="text-white/80">
             📅 {event.date} — 📍 {event.location}
           </p>

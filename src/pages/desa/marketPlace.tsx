@@ -19,7 +19,7 @@ export default function MarketPlace() {
       id: 1,
       name: "Beras Organik Desa",
       price: 85000,
-      image: "/images/desa/product-rice.jpg",
+      image: "/images/desa/batik.jpg",
       sold: 124,
       location: "Desa Sukamaju",
       category: "Pertanian",
@@ -28,7 +28,7 @@ export default function MarketPlace() {
       id: 2,
       name: "Keripik Pisang Manis",
       price: 15000,
-      image: "/images/desa/product-snack.jpg",
+      image: "/images/desa/batik.jpg",
       sold: 87,
       location: "Desa Harapan",
       category: "Makanan",
@@ -37,7 +37,7 @@ export default function MarketPlace() {
       id: 3,
       name: "Anyaman Bambu Khas",
       price: 55000,
-      image: "/images/desa/product-bamboo.jpg",
+      image: "/images/desa/batik.jpg",
       sold: 42,
       location: "Desa Mekarsari",
       category: "Kerajinan",
@@ -46,7 +46,7 @@ export default function MarketPlace() {
       id: 4,
       name: "Kopi Robusta Asli",
       price: 75000,
-      image: "/images/desa/product-coffee.jpg",
+      image: "/images/desa/batik.jpg",
       sold: 230,
       location: "Desa Kopiluhur",
       category: "Minuman",
@@ -55,7 +55,7 @@ export default function MarketPlace() {
       id: 5,
       name: "Madu Hutan Asli",
       price: 120000,
-      image: "/images/desa/product-honey.jpg",
+      image: "/images/desa/batik.jpg",
       sold: 98,
       location: "Desa Alam Raya",
       category: "Minuman",
@@ -64,7 +64,7 @@ export default function MarketPlace() {
       id: 6,
       name: "Kerajinan Tanah Liat",
       price: 65000,
-      image: "/images/desa/product-clay.jpg",
+      image: "/images/desa/batik.jpg",
       sold: 33,
       location: "Desa Sentana",
       category: "Kerajinan",
@@ -81,7 +81,9 @@ export default function MarketPlace() {
       {/* Header */}
       <div className="flex flex-col lg:flex-row lg:justify-between lg:items-center mb-10">
         <div>
-          <h1 className="text-3xl font-bold mb-1">Marketplace Desa</h1>
+          <h1 className="text-3xl font-bold mb-1">
+            <div className="text-white">Marketplace Desa</div>
+          </h1>
           <p className="text-white">
             Dukung ekonomi lokal dengan membeli produk unggulan masyarakat desa.
           </p>
