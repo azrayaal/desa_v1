@@ -481,22 +481,23 @@ export default function DesaDashboard() {
     {/* Centered Logo */}
     <div className="absolute left-1/2 transform -translate-x-1/2 flex items-center justify-center">
       <img
-        src="/images/desaicon.png"
+        src="/images/garuda.png"
         alt="Desa Icon"
-        className="w-8 h-8 filter brightness-0 saturate-100 invert-[40%] sepia-[90%] saturate-[500%] hue-rotate-[90deg] contrast-[120%]"
+        className="w-8 h-8"
         onError={(e) => {
           e.currentTarget.style.display = 'none';
         }}
       />
-    </div>
-
-    {/* Right Section */}
-    <div className="flex items-center gap-4">
-      <div className="text-xl font-bold text-white">
+      <div className="text-xl font-bold text-white ml-2">
         {activeMeta === "desa"
           ? `Dashboard ${currentDesa.name}`
           : `Dashboard ${currentMeta?.name}`}
       </div>
+    </div>
+
+    {/* Right Section */}
+    <div className="flex items-center gap-4">
+      
 
       <div className="flex items-center gap-2">
         {activeMeta === "desa" && (
@@ -546,31 +547,18 @@ export default function DesaDashboard() {
               : "hover:bg-gray-800"
           }`}
         >
-          <div className="flex items-center gap-2">
-            {/* <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              strokeWidth={1.5}
-              stroke="currentColor"
-              className="w-6 h-6"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M2.25 12l9.75-9.75L21.75 12M4.5 10.5v10.125a.375.375 0 00.375.375H9.75v-6h4.5v6h4.875a.375.375 0 00.375-.375V10.5"
-              />
-            </svg> */}
-            <span className="text-sm font-medium"> <img 
-  src="/images/desaicon.png" 
-  alt="Desa Icon" 
-  className="w-8 h-8 filter invert brightness-200"
-  onError={(e) => {
-    e.currentTarget.style.display = 'none';
-  }}
-/>
-</span>
-          </div>
+      <div className="flex items-center gap-2">
+  <img
+    src="/images/desaicon.png"
+    alt="Desa Icon"
+    className="w-6 h-6 filter invert brightness-200"
+    onError={(e) => {
+      e.currentTarget.style.display = 'none';
+    }}
+  />
+  <span className="text-sm font-medium">Dashboard</span>
+</div>
+
         </div>
         
         <div
@@ -581,7 +569,7 @@ export default function DesaDashboard() {
               : "hover:bg-gray-800"
           }`}
         >
-          <div className="text-xl font-bold">M</div>
+          <div className="text-sm font-medium">Marketplace</div>
         </div>
         
         <div
@@ -592,7 +580,7 @@ export default function DesaDashboard() {
               : "hover:bg-gray-800"
           }`}
         >
-          <div className="text-xl font-bold">E</div>
+          <div className="text-sm font-medium">Export</div>
         </div>
         
         <div
@@ -603,7 +591,7 @@ export default function DesaDashboard() {
               : "hover:bg-gray-800"
           }`}
         >
-          <div className="text-xl font-bold">T</div>
+          <div className="text-sm font-medium">Talent</div>
         </div>
         
         <div
@@ -614,7 +602,7 @@ export default function DesaDashboard() {
               : "hover:bg-gray-800"
           }`}
         >
-          <div className="text-xl font-bold">A</div>
+          <div className="text-sm font-medium">Art</div>
         </div>
       </div>
 
