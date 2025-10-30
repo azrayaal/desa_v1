@@ -9,8 +9,6 @@ import {
   GridIcon,
   GroupIcon,
   HorizontaLDots,
-  TableIcon,
-  UserCircleIcon,
   WorldIcon,
 } from "../icons";
 import { useSidebar } from "../context/SidebarContext";
