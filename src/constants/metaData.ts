@@ -93,75 +93,77 @@ export const desaProducts: Record<string, ProductData> = {
 // Data export desa untuk section E
 export const desaExports: Record<string, ExportData> = {
   Bojonggede: {
-    totalExports: 45,
-    totalValue: 125000,
-    revenue: 87500,
+    totalExports: 89,
+    totalValue: 24500000,
+    revenue: 18900000,
     destinations: [
-      { country: "Malaysia", percentage: 35, value: 43750 },
-      { country: "Singapore", percentage: 25, value: 31250 },
-      { country: "Thailand", percentage: 20, value: 25000 },
-      { country: "Vietnam", percentage: 20, value: 25000 }
+      { country: "Malaysia", percentage: 35, value: 8575000 },
+      { country: "Singapura", percentage: 28, value: 6860000 },
+      { country: "Thailand", percentage: 20, value: 4900000 },
+      { country: "Vietnam", percentage: 12, value: 2940000 },
+      { country: "Filipina", percentage: 5, value: 1225000 }
     ],
     exportInfo: {
-      totalCountries: 8,
-      mainProducts: ["Keripik Singkong", "Batik Tulis", "Madu Hutan", "Keramik Tradisional"],
-      certifications: ["Halal", "ISO 9001", "SNI"],
-      shippingPartners: ["JNE", "TIKI", "Pos Indonesia", "FedEx"],
-      paymentMethods: ["Bank Transfer", "PayPal", "Wise", "Western Union"]
+      totalCountries: 15,
+      mainProducts: ["Batik Tulis", "Keramik Tradisional", "Madu Hutan Organik"],
+      certifications: ["Halal", "Organic", "Fair Trade"],
+      shippingPartners: ["DHL", "FedEx", "TNT", "JNE International"],
+      paymentMethods: ["Bank Transfer", "PayPal", "Alibaba Trade Assurance"]
     },
     exports: [
-      { id: 1, name: "Keripik Singkong Export", category: "Makanan", price: 25, sold: 89, stock: 45, destinations: ["Malaysia", "Singapore"] },
-      { id: 2, name: "Batik Tulis Export", category: "Kerajinan", price: 150, sold: 23, stock: 12, destinations: ["Thailand", "Vietnam"] },
-      { id: 3, name: "Madu Hutan Export", category: "Makanan", price: 45, sold: 67, stock: 28, destinations: ["Malaysia", "Singapore"] },
-      { id: 4, name: "Keramik Tradisional Export", category: "Kerajinan", price: 75, sold: 34, stock: 18, destinations: ["Thailand", "Vietnam"] }
+      { id: 1, name: "Batik Tulis", category: "Kerajinan", price: 450000, sold: 45, stock: 23, destinations: ["Malaysia", "Singapura", "Thailand"] },
+      { id: 2, name: "Keramik Tradisional", category: "Kerajinan", price: 320000, sold: 28, stock: 15, destinations: ["Malaysia", "Vietnam", "Filipina"] },
+      { id: 3, name: "Madu Hutan Organik", category: "Makanan", price: 125000, sold: 67, stock: 34, destinations: ["Singapura", "Thailand", "Malaysia"] },
+      { id: 4, name: "Kopi Arabika Premium", category: "Minuman", price: 85000, sold: 89, stock: 45, destinations: ["Thailand", "Vietnam", "Filipina"] },
+      { id: 5, name: "Keripik Singkong Export", category: "Makanan", price: 25000, sold: 156, stock: 78, destinations: ["Malaysia", "Singapura", "Thailand"] }
     ]
   },
   Megamendung: {
-    totalExports: 32,
-    totalValue: 89000,
-    revenue: 62300,
+    totalExports: 67,
+    totalValue: 18900000,
+    revenue: 15600000,
     destinations: [
-      { country: "Malaysia", percentage: 40, value: 35600 },
-      { country: "Singapore", percentage: 30, value: 26700 },
-      { country: "Thailand", percentage: 20, value: 17800 },
-      { country: "Vietnam", percentage: 10, value: 8900 }
+      { country: "Jepang", percentage: 40, value: 7560000 },
+      { country: "Korea Selatan", percentage: 30, value: 5670000 },
+      { country: "Taiwan", percentage: 20, value: 3780000 },
+      { country: "Hong Kong", percentage: 10, value: 1890000 }
     ],
     exportInfo: {
-      totalCountries: 6,
-      mainProducts: ["Sayuran Organik", "Kerajinan Bambu", "Jamur Tiram", "Tas Anyaman"],
-      certifications: ["Organic", "ISO 9001", "SNI"],
-      shippingPartners: ["JNE", "TIKI", "Pos Indonesia"],
-      paymentMethods: ["Bank Transfer", "PayPal", "Wise"]
+      totalCountries: 12,
+      mainProducts: ["Sayuran Organik", "Kerajinan Bambu", "Jamur Tiram Premium"],
+      certifications: ["Organic", "ISO 22000", "HACCP"],
+      shippingPartners: ["DHL", "FedEx", "EMS", "Pos Indonesia"],
+      paymentMethods: ["Bank Transfer", "PayPal", "Alibaba Trade Assurance", "Letter of Credit"]
     },
     exports: [
-      { id: 1, name: "Sayuran Organik Export", category: "Makanan", price: 35, sold: 134, stock: 56, destinations: ["Malaysia", "Singapore"] },
-      { id: 2, name: "Kerajinan Bambu Export", category: "Kerajinan", price: 120, sold: 45, stock: 23, destinations: ["Thailand", "Vietnam"] },
-      { id: 3, name: "Jamur Tiram Export", category: "Makanan", price: 50, sold: 78, stock: 34, destinations: ["Malaysia", "Singapore"] },
-      { id: 4, name: "Tas Anyaman Export", category: "Kerajinan", price: 135, sold: 29, stock: 15, destinations: ["Thailand", "Vietnam"] }
+      { id: 1, name: "Sayuran Organik", category: "Makanan", price: 45000, sold: 89, stock: 45, destinations: ["Jepang", "Korea Selatan", "Taiwan"] },
+      { id: 2, name: "Kerajinan Bambu", category: "Kerajinan", price: 180000, sold: 34, stock: 18, destinations: ["Jepang", "Hong Kong", "Taiwan"] },
+      { id: 3, name: "Jamur Tiram Premium", category: "Makanan", price: 65000, sold: 56, stock: 28, destinations: ["Korea Selatan", "Taiwan", "Hong Kong"] },
+      { id: 4, name: "Tas Anyaman Tradisional", category: "Kerajinan", price: 220000, sold: 23, stock: 12, destinations: ["Jepang", "Korea Selatan", "Taiwan"] }
     ]
   },
   Cibuluh: {
-    totalExports: 28,
-    totalValue: 67000,
-    revenue: 46900,
+    totalExports: 54,
+    totalValue: 15600000,
+    revenue: 12800000,
     destinations: [
-      { country: "Malaysia", percentage: 45, value: 30150 },
-      { country: "Singapore", percentage: 25, value: 16750 },
-      { country: "Thailand", percentage: 20, value: 13400 },
-      { country: "Vietnam", percentage: 10, value: 6700 }
+      { country: "Australia", percentage: 35, value: 5460000 },
+      { country: "Selandia Baru", percentage: 25, value: 3900000 },
+      { country: "Kanada", percentage: 20, value: 3120000 },
+      { country: "Amerika Serikat", percentage: 20, value: 3120000 }
     ],
     exportInfo: {
-      totalCountries: 5,
-      mainProducts: ["Ikan Segar", "Kerupuk Ikan", "Kerajinan Kulit", "Sambal Terasi"],
-      certifications: ["Halal", "ISO 9001", "SNI"],
-      shippingPartners: ["JNE", "TIKI", "Pos Indonesia"],
-      paymentMethods: ["Bank Transfer", "PayPal", "Wise"]
+      totalCountries: 8,
+      mainProducts: ["Ikan Segar Premium", "Kerupuk Ikan Export", "Kerajinan Kulit Premium"],
+      certifications: ["HACCP", "ISO 22000", "FDA Approved"],
+      shippingPartners: ["DHL", "FedEx", "UPS", "TNT"],
+      paymentMethods: ["Bank Transfer", "PayPal", "Alibaba Trade Assurance", "Western Union"]
     },
     exports: [
-      { id: 1, name: "Ikan Segar Export", category: "Makanan", price: 80, sold: 89, stock: 42, destinations: ["Malaysia", "Singapore"] },
-      { id: 2, name: "Kerupuk Ikan Export", category: "Makanan", price: 25, sold: 156, stock: 78, destinations: ["Thailand", "Vietnam"] },
-      { id: 3, name: "Kerajinan Kulit Export", category: "Kerajinan", price: 200, sold: 18, stock: 9, destinations: ["Malaysia", "Singapore"] },
-      { id: 4, name: "Sambal Terasi Export", category: "Makanan", price: 30, sold: 67, stock: 33, destinations: ["Thailand", "Vietnam"] }
+      { id: 1, name: "Ikan Segar Premium", category: "Makanan", price: 95000, sold: 67, stock: 34, destinations: ["Australia", "Selandia Baru", "Kanada"] },
+      { id: 2, name: "Kerupuk Ikan Export", category: "Makanan", price: 35000, sold: 89, stock: 45, destinations: ["Amerika Serikat", "Australia", "Selandia Baru"] },
+      { id: 3, name: "Kerajinan Kulit Premium", category: "Kerajinan", price: 280000, sold: 18, stock: 9, destinations: ["Kanada", "Amerika Serikat", "Australia"] },
+      { id: 4, name: "Sambal Terasi Export", category: "Makanan", price: 45000, sold: 45, stock: 23, destinations: ["Selandia Baru", "Kanada", "Amerika Serikat"] }
     ]
   }
 };
@@ -181,25 +183,25 @@ export const desaTalents: Record<string, TalentData> = {
     ]
   },
   Megamendung: {
-    totalTalents: 38,
-    certifiedTalents: 32,
+    totalTalents: 32,
+    certifiedTalents: 28,
     revenue: 9800000,
     talents: [
-      { id: 1, name: "H. Suryadi", skill: "Web Development", level: "Expert", certified: true, projects: 10 },
-      { id: 2, name: "Rina Sari", skill: "Digital Marketing", level: "Advanced", certified: true, projects: 7 },
-      { id: 3, name: "Ahmad Wijaya", skill: "Data Analysis", level: "Intermediate", certified: false, projects: 4 },
-      { id: 4, name: "Siti Nurhaliza", skill: "UI/UX Design", level: "Expert", certified: true, projects: 12 }
+      { id: 1, name: "Eko Prasetyo", skill: "Cloud Computing", level: "Expert", certified: true, projects: 9 },
+      { id: 2, name: "Maya Sari", skill: "Graphic Design", level: "Advanced", certified: true, projects: 7 },
+      { id: 3, name: "Agus Wijaya", skill: "Network Security", level: "Intermediate", certified: false, projects: 4 },
+      { id: 4, name: "Lina Putri", skill: "Content Creation", level: "Expert", certified: true, projects: 11 }
     ]
   },
   Cibuluh: {
-    totalTalents: 32,
-    certifiedTalents: 28,
-    revenue: 8200000,
+    totalTalents: 28,
+    certifiedTalents: 22,
+    revenue: 7600000,
     talents: [
-      { id: 1, name: "H. Dedi Kurniawan", skill: "Web Development", level: "Expert", certified: true, projects: 8 },
-      { id: 2, name: "Siti Nurhaliza", skill: "Digital Marketing", level: "Advanced", certified: true, projects: 6 },
-      { id: 3, name: "Ahmad Wijaya", skill: "Data Analysis", level: "Intermediate", certified: false, projects: 3 },
-      { id: 4, name: "Budi Santoso", skill: "UI/UX Design", level: "Expert", certified: true, projects: 9 }
+      { id: 1, name: "Rudi Hartono", skill: "Database Management", level: "Expert", certified: true, projects: 6 },
+      { id: 2, name: "Sari Indah", skill: "Social Media Marketing", level: "Advanced", certified: true, projects: 9 },
+      { id: 3, name: "Joko Susilo", skill: "Video Editing", level: "Intermediate", certified: false, projects: 3 },
+      { id: 4, name: "Dewi Lestari", skill: "E-commerce Management", level: "Expert", certified: true, projects: 8 }
     ]
   }
 };

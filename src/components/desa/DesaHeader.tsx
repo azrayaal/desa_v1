@@ -13,7 +13,6 @@ interface DesaHeaderProps {
   setSelectedDesa: (desa: string) => void;
   selectedIssue: string;
   setSelectedIssue: (issue: string) => void;
-  activeMeta: string;
   setActiveMeta: (meta: string) => void;
 }
 
@@ -73,6 +72,7 @@ export const DesaHeader: React.FC<DesaHeaderProps> = ({
           Logout
         </button>
       </div>
+    </div>
     </div>
   );
 };

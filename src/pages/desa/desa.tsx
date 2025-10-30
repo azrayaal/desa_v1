@@ -1,5 +1,5 @@
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import {
   PieChart,
   Pie,
@@ -17,6 +17,7 @@ import {
   Marker,
   Popup,
   ZoomControl,
+  useMap,
 } from "react-leaflet";
 import { LuRefreshCw } from "react-icons/lu";
 import L from "leaflet";
@@ -162,7 +163,19 @@ const wordCloudData = [
   "akses", "transportasi", "komunikasi", "digital", "inovasi"
 ];
 
+// Komponen helper untuk update posisi peta
+function MapUpdater({ center }: { center: [number, number] }) {
+  const map = useMap();
+  
+  useEffect(() => {
+    map.setView(center, 12, {
+      animate: true,
+      duration: 1
+    });
+  }, [center, map]);
 
+  return null;
+}
 
 export default function DesaDashboard() {
   const [selectedIssue, setSelectedIssue] = useState("All Issues");
@@ -1462,6 +1475,7 @@ export default function DesaDashboard() {
                           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
                         />
                         <ZoomControl position="topleft" />
+                        <MapUpdater center={[currentDesa.lat, currentDesa.lng]} />
 
                 {/* Marker untuk desa yang dipilih */}
                 <Marker position={[currentDesa.lat, currentDesa.lng]}>
