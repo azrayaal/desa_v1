@@ -13,7 +13,6 @@ interface DesaHeaderProps {
   setSelectedDesa: (desa: string) => void;
   selectedIssue: string;
   setSelectedIssue: (issue: string) => void;
-  setActiveMeta: (meta: string) => void;
 }
 
 export const DesaHeader: React.FC<DesaHeaderProps> = ({
@@ -23,8 +22,7 @@ export const DesaHeader: React.FC<DesaHeaderProps> = ({
   selectedDesa,
   setSelectedDesa,
   selectedIssue,
-  setSelectedIssue,
-  setActiveMeta
+  setSelectedIssue
 }) => {
   return (
     <div className="bg-gray-800 border-b border-gray-700 px-6 py-4">

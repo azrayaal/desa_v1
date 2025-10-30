@@ -37,7 +37,7 @@ export const Charts: React.FC<ChartsProps> = ({
                 fill="#8884d8"
                 dataKey="value"
               >
-                {issuesData.map((entry, index) => (
+                {issuesData.map((_, index) => (
                   <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
                 ))}
               </Pie>
