@@ -161,7 +161,28 @@ export default function DashboardDesa() {
             <span className="text-sm font-medium">Dashboard</span>
           </div>
         </div>
-        
+
+ <div
+          onClick={() => setActiveMeta("T")}
+          className={`flex-1 flex justify-center items-center border-r border-gray-700 cursor-pointer transition h-16 ${
+            activeMeta === "T"
+              ? "bg-purple-600 text-white"
+              : "hover:bg-gray-800"
+          }`}
+        >
+          <div className="text-sm font-medium">Talent</div>
+        </div>
+          <div
+          onClick={() => setActiveMeta("E")}
+          className={`flex-1 flex justify-center items-center border-r border-gray-700 cursor-pointer transition h-16 ${
+            activeMeta === "E"
+              ? "bg-green-600 text-white"
+              : "hover:bg-gray-800"
+          }`}
+        >
+          <div className="text-sm font-medium">Export</div>
+        </div>
+
         <div
           onClick={() => setActiveMeta("M")}
           className={`flex-1 flex justify-center items-center border-r border-gray-700 cursor-pointer transition h-16 ${
@@ -173,27 +194,9 @@ export default function DashboardDesa() {
           <div className="text-sm font-medium">Marketplace</div>
         </div>
         
-        <div
-          onClick={() => setActiveMeta("E")}
-          className={`flex-1 flex justify-center items-center border-r border-gray-700 cursor-pointer transition h-16 ${
-            activeMeta === "E"
-              ? "bg-green-600 text-white"
-              : "hover:bg-gray-800"
-          }`}
-        >
-          <div className="text-sm font-medium">Export</div>
-        </div>
+     
         
-        <div
-          onClick={() => setActiveMeta("T")}
-          className={`flex-1 flex justify-center items-center border-r border-gray-700 cursor-pointer transition h-16 ${
-            activeMeta === "T"
-              ? "bg-purple-600 text-white"
-              : "hover:bg-gray-800"
-          }`}
-        >
-          <div className="text-sm font-medium">Talent</div>
-        </div>
+       
         
         <div
           onClick={() => setActiveMeta("A")}
@@ -1135,7 +1138,7 @@ export default function DashboardDesa() {
       </div>
 
       {/* Embed Shopify Full Width untuk section M */}
-      {activeMeta === "M" && (
+      {/* {activeMeta === "M" && (
         <div className="mx-6 mb-6">
           <div className="bg-gray-800 rounded-lg p-6">
             <h3 className="text-xl font-bold mb-4 text-white">Shopify Store - Produk Desa {currentDesa.name}</h3>
@@ -1157,10 +1160,10 @@ export default function DashboardDesa() {
             </div>
           </div>
         </div>
-      )}
+      )} */}
 
       {/* Embed Alibaba Full Width untuk section E */}
-      {activeMeta === "E" && (
+      {/* {activeMeta === "E" && (
         <div className="mx-6 mb-6">
           <div className="bg-gray-800 rounded-lg p-6">
             <h3 className="text-xl font-bold mb-4 text-white">Alibaba Export Platform - Produk Desa {currentDesa.name}</h3>
@@ -1182,10 +1185,10 @@ export default function DashboardDesa() {
             </div>
           </div>
         </div>
-      )}
+      )} */}
 
       {/* Embed NIKICI Full Width untuk section T */}
-      {activeMeta === "T" && (
+      {/* {activeMeta === "T" && (
         <div className="mx-6 mb-6">
           <div className="bg-gray-800 rounded-lg p-6">
             <h3 className="text-xl font-bold mb-4 text-white">NIKICI Certification Platform - Talent Desa {currentDesa.name}</h3>
@@ -1207,7 +1210,7 @@ export default function DashboardDesa() {
             </div>
           </div>
         </div>
-      )}
+      )} */}
 
       {/* Embed Art Platforms untuk section A */}
       {activeMeta === "A" && (
@@ -1219,19 +1222,19 @@ export default function DashboardDesa() {
             <div className="grid grid-cols-3 gap-6">
               {/* Instagram Embed */}
               <div>
-                <h4 className="text-lg font-semibold mb-3 text-pink-400">📸 Instagram Saraga Technology</h4>
+                <h4 className="text-lg font-semibold mb-3 text-pink-400">📸 Instagram Sagara Technology</h4>
                 <div className="bg-white rounded-lg overflow-hidden">
                   <iframe
-                    src="https://www.instagram.com/saragatechnology/embed/"
+                    src="https://www.instagram.com/sagaratechnology/embed/"
                     width="100%"
                     height="600"
                     frameBorder="0"
-                    title="Instagram Saraga Technology"
+                    title="Instagram sagara Technology"
                     className="rounded-lg"
                   ></iframe>
                 </div>
                 <div className="mt-2 text-sm text-gray-400">
-                  <p>🔗 <a href="https://www.instagram.com/saragatechnology/" target="_blank" rel="noopener noreferrer" className="text-pink-400 hover:text-pink-300">
+                  <p>🔗 <a href="https://www.instagram.com/sagaratechnology/" target="_blank" rel="noopener noreferrer" className="text-pink-400 hover:text-pink-300">
                     Buka Instagram di tab baru
                   </a></p>
                 </div>
@@ -1239,19 +1242,19 @@ export default function DashboardDesa() {
 
               {/* YouTube Embed */}
               <div>
-                <h4 className="text-lg font-semibold mb-3 text-red-400">🎥 YouTube Saraga Technology</h4>
+                <h4 className="text-lg font-semibold mb-3 text-red-400">🎥 YouTube Sagara Technology</h4>
                 <div className="bg-white rounded-lg overflow-hidden">
                   <iframe
-                    src="https://www.youtube.com/embed/channel/UCsaragatechnology"
+                    src="https://www.youtube.com/embed/channel/UCsagaratechnology"
                     width="100%"
                     height="600"
                     frameBorder="0"
-                    title="YouTube Saraga Technology"
+                    title="YouTube sagara Technology"
                     className="rounded-lg"
                   ></iframe>
                 </div>
                 <div className="mt-2 text-sm text-gray-400">
-                  <p>🔗 <a href="https://www.youtube.com/@saragatechnology" target="_blank" rel="noopener noreferrer" className="text-red-400 hover:text-red-300">
+                  <p>🔗 <a href="https://www.youtube.com/@sagaratechnology" target="_blank" rel="noopener noreferrer" className="text-red-400 hover:text-red-300">
                     Buka YouTube di tab baru
                   </a></p>
                 </div>
@@ -1259,19 +1262,19 @@ export default function DashboardDesa() {
 
               {/* TikTok Embed */}
               <div>
-                <h4 className="text-lg font-semibold mb-3 text-black bg-white px-2 py-1 rounded">🎵 TikTok Saraga Technology</h4>
+                <h4 className="text-lg font-semibold mb-3 text-black bg-white px-2 py-1 rounded">🎵 TikTok sagara Technology</h4>
                 <div className="bg-white rounded-lg overflow-hidden">
                   <iframe
-                    src="https://www.tiktok.com/embed/@saragatechnology"
+                    src="https://www.tiktok.com/embed/@sagaratechnology"
                     width="100%"
                     height="600"
                     frameBorder="0"
-                    title="TikTok Saraga Technology"
+                    title="TikTok Sagara Technology"
                     className="rounded-lg"
                   ></iframe>
                 </div>
                 <div className="mt-2 text-sm text-gray-400">
-                  <p>🔗 <a href="https://www.tiktok.com/@saragatechnology" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-gray-300">
+                  <p>🔗 <a href="https://www.tiktok.com/@sagaratechnology" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-gray-300">
                     Buka TikTok di tab baru
                   </a></p>
                 </div>
