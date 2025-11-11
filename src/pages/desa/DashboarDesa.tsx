@@ -97,7 +97,8 @@ export default function DashboardDesa() {
             <div className="text-xl font-bold text-white ml-2">
               {activeMeta === "desa"
                 ? `Dashboard ${currentDesa.name}`
-                : `Dashboard ${currentMeta?.name}`}
+                // : `Dashboard ${currentMeta?.name}`}
+                : `Dashboard ${currentDesa?.name}`}
             </div>
           </div>
 
@@ -182,21 +183,6 @@ export default function DashboardDesa() {
         >
           <div className="text-sm font-medium">Export</div>
         </div>
-
-        <div
-          onClick={() => setActiveMeta("M")}
-          className={`flex-1 flex justify-center items-center border-r border-gray-700 cursor-pointer transition h-16 ${
-            activeMeta === "M"
-              ? "bg-orange-600 text-white"
-              : "hover:bg-gray-800"
-          }`}
-        >
-          <div className="text-sm font-medium">Marketplace</div>
-        </div>
-        
-     
-        
-       
         
         <div
           onClick={() => setActiveMeta("A")}
@@ -208,7 +194,19 @@ export default function DashboardDesa() {
         >
           <div className="text-sm font-medium">Art</div>
         </div>
+
+        <div
+          onClick={() => setActiveMeta("M")}
+          className={`flex-1 flex justify-center items-center border-r border-gray-700 cursor-pointer transition h-16 ${
+            activeMeta === "M"
+              ? "bg-orange-600 text-white"
+              : "hover:bg-gray-800"
+          }`}
+        >
+          <div className="text-sm font-medium">Marketplace</div>
+        </div>
       </div>
+
 
       {/* Main Content */}
       <div className="flex h-full mx-6 mb-6 border-2 border-gray-700 rounded-b-lg ">
@@ -768,7 +766,7 @@ export default function DashboardDesa() {
           )}
 
           {/* Form Tambah Export untuk section E - Kanan */}
-          {activeMeta === "E" && (
+          {/* {activeMeta === "E" && (
             <div className="bg-gray-800 rounded-lg p-6 mb-6">
               <h3 className="text-lg font-semibold mb-4">Tambah Produk Export</h3>
               <form className="space-y-4">
@@ -854,7 +852,7 @@ export default function DashboardDesa() {
                 </div>
               </form>
             </div>
-          )}
+          )} */}
 
           {/* Total Sentiment Bar Chart */}
           {activeMeta !== "E" && (
@@ -890,7 +888,7 @@ export default function DashboardDesa() {
           )}
 
           {/* Form Tambah Produk untuk section M - Kanan */}
-          {activeMeta === "M" && (
+          {/* {activeMeta === "M" && (
             <div className="bg-gray-800 rounded-lg p-6 mb-6">
               <h3 className="text-lg font-semibold mb-4">Tambah Produk Baru</h3>
               <form className="space-y-4">
@@ -957,7 +955,7 @@ export default function DashboardDesa() {
                 </div>
               </form>
             </div>
-          )}
+          )} */}
 
           {/* Recent Popular Article */}
           {activeMeta !== "M" && activeMeta !== "E" && activeMeta !== "T" && activeMeta !== "A" && (
